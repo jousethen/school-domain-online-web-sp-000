@@ -8,7 +8,7 @@ class School
   end
   
   def add_student (sname, grade)
-    self.roster[grade] = []
+    self.roster[grade] = [] if self.roster
     self.roster[grade] << sname
   end
 end
